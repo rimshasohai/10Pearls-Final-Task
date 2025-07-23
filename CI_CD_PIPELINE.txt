@@ -74,7 +74,7 @@ jobs:
 
           def get_weather():
               try:
-                  url = f"http://api.openweathermap.org/data/2.5/weather?q={CITY},{COUNTRY}&appid={OPENWEATHER_KEY}&units=metric"
+                  url = f"http://api.openweathermap.org/data/2.5/weather?q={CITY},{COUNTRY}&appid={WEATHER_KEY}&units=metric"
                   r = requests.get(url)
                   r.raise_for_status()
                   data = r.json()
