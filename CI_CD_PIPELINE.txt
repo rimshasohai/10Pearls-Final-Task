@@ -155,7 +155,7 @@ jobs:
               all_data = pd.concat([pd.read_csv(f) for f in files], ignore_index=True)
               os.makedirs("data1", exist_ok=True)
               all_data.to_csv("data1/merged_karachi_aqi.csv", index=False)
-              print("✅ Merged file saved to data1/merged_karachi_aqi.csv")
+              print("✅ Merged file saved to data1/karachi_aqi.csv")
 
           collect_hourly_data()
           merge_all_data()
